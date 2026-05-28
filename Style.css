@@ -1,0 +1,143 @@
+* {
+     box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+body{
+    display: block;
+    min-height: 100%;
+    margin: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+nav{
+    background-color:  rgb(0, 123, 255);
+    text-align: right;
+    padding: 1vh;
+    margin-top: 0px;
+}
+ul{
+    display: none;
+    list-style-type: none;
+    gap: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#checkbox:checked ~ ul{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+#checkbox{
+    display: none;
+}
+.toggle{
+  cursor: pointer;
+
+}
+main{
+    min-height: 100vh;
+    height:auto;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url("Home_image.png") ;
+    background-size: 100% 100%;
+    background-position: center;
+    color: white; 
+    padding-top: 10px;
+
+}
+h1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 65px;
+    margin: 5px;
+    line-height: 1;
+}
+#ueberschrift span{
+    color: rgb(0, 123, 255);
+}
+#ueberschrift p{
+    font-family:  'Times New Roman', Times, serif ;
+    font-size: 20px;
+    color: rgb(0, 123, 255);
+    margin-top: 10px;
+    line-height: 1;
+}
+footer{
+    background-color: red;
+    color: white;
+    margin: 0px;
+}
+#Gastgeberland{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+#Gastgeberland p{
+   font-size: 20px; 
+   font-weight: bold;
+}
+#quiz{
+    border: solid 1px  blueviolet ;
+    border-radius: 2em;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+    transition: 0.3s;
+}
+#quiz:hover{
+    transform: scale(1.05);
+}
+#info{
+    display: flex;
+    flex-direction: column;
+     margin: 35px;
+    width: 40%;
+    gap: 15px;
+    justify-content: left;
+}
+#news{
+
+   
+}
+#spielplan{
+
+
+}
+#titel{
+    margin: 35px;
+    margin-top: 0px;
+}
+#quiz i{
+    color:aquamarine;
+    font-size:28px;
+}
+#quiz a{
+text-decoration: none; 
+ color:white;
+ background-color: blueviolet;
+ padding: 5px;
+}
+#quiz a:hover{
+ cursor: pointer;   
+font-size:25px ;
+
+}
+#quiz p{
+    font-size:20px;
+}
