@@ -1244,8 +1244,67 @@ html{
     .gruppe{
         grid-template-columns: repeat(4,1fr);
     }
+
+
+    table{
+        font-size: 1.5em;
+    }
+    .spiel-link{
+    font-size: 1.5em;
+}
+.grup li {
+    font-size: 1.5em;
+}
+.best p{
+    font-size: 1.4em;
 }
 
+.title h2{
+    font-size: 2em;
+}
+#teamcontent h1{
+    font-size: 1.8em;
+}
+#teamcontent p{
+    font-size: 1.5em;
+}
+.navbar a{
+    font-size: 1.7em;
+}
+#nav_content ul{
+    font-size: 1em;
+}
+
+
+
+/*quiz*/
+.quiz p{
+    font-size: 1.6em;
+}
+
+.quiz-block p{
+    font-size: 1.5em;
+    
+}
+.quiz-btn{
+    font-size: 1.5em;
+}
+.question{
+    font-size: 1.7em;
+}
+
+.answer-btn {
+        font-size: 1.7em;
+        padding: 20px 24px;
+    }
+
+    .result h2{
+        font-size: 2em;
+    }
+    #score{
+        font-size: 1.7em;
+    }
+}
 /*Tablette*/
 
 @media all and (min-width:768px){
@@ -1321,11 +1380,21 @@ html{
         align-items: center;
         flex-wrap: wrap;
         gap:25px;
+        font-size: 28px;
     }
 
+    h3{
+        font-size: 1.75em;
+    }
+
+   footer p{
+    font-size: 1.5em;
+   }
     .social-medien a{
         font-size: 28px;
     }
+
+
 }
 
 
@@ -1370,3 +1439,6 @@ html{
         opacity: 0;
     }
 }
+
+
+
