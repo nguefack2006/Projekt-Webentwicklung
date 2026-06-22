@@ -1,0 +1,232 @@
+
+#bodyticket{
+    display:  grid;
+    grid-template-columns: 1fr;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+}
+.navbar{
+    background-color: rgb(2,8,23);
+     border: solid 1px rgba(255,255,255,0.4);
+    border-radius: 12px;
+    margin: 0px;  
+    padding:18px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo img{
+    width:35px;
+
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:20px;
+}
+.logo span{
+    color:rgb(30,144,255);
+}
+#togglemenu{
+    display:none;
+}
+.burger{
+    color:white;
+    cursor: pointer;
+    font-size: 30px;
+}
+#nav_content{
+    display: none; 
+    width: 100%;
+    margin-top: 15px;
+}
+#togglemenu:checked ~ #nav_content{
+    display: block;
+}
+.navlink{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+.navlink a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+   
+   
+}
+.navlink li{
+    margin-bottom: 10px;
+}
+.navlink a:hover{
+    color:rgb(30,144,255);
+}
+.search input{
+    padding:6px 10px;
+    border-radius: 6px;
+    border:none;
+    
+}
+.search button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    background-color: rgb(30,144,255);
+    color: white;
+    
+}
+#section-ticket{
+    background-color: rgb(30, 41, 59);
+    padding: 15px;
+    min-height: 300px;
+    margin-bottom: 10px;
+}
+
+#section-ticket h1{
+font-family: "Roboto Condensed", sans-serif;
+text-transform: uppercase;
+    font-weight: bold;
+    font-size: 45px;
+    margin: 20px;
+    line-height: 1;
+    color: white;
+}
+#section-ticket p{
+    text-transform: uppercase;
+    color: grey;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+#land-contenairticket{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px;
+    color: white;
+    
+}
+#alleSpieleTicket{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#alleSpieleTicket a{
+    text-decoration: none;
+    border-radius: 2em;
+    padding: 10px;
+    border: solid 2px  rgb(30,144,255) ;
+    color: black;
+    background-color: lightgrey;
+}
+#contenairticket{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10ox;
+}
+ h2{
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    color: goldenrod ;
+    font-weight: bold;
+}
+.tick{
+    border: solid 2px goldenrod ;
+    padding: 10 px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.tick h3{
+    background-color: rgb(30, 41, 59) ;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.tick p{
+    background-color: rgb(30, 41, 59) ;
+    color: grey;
+    margin: 0px;
+    padding: 10px;
+}
+.tick h4{
+font-size: 15px;
+margin: 20px;
+}
+.tick a{
+    padding: 10px;
+    border: solid 2px  rgb(30, 41, 59) ;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 2em;
+    background-color: lightgrey;
+}
+a:hover{
+    color: blue;
+}
+@media screen and (min-width: 431px){
+#section-ticket h1{
+    font-size: 55px;
+}
+#section-ticket p{
+font-size: 20px;
+}
+#land-contenairticket{
+    flex-direction: row;
+    font-size: 20px;
+}
+#alleSpieleTicket{
+    flex-direction: row;
+}
+#alleSpieleTicket a{
+    font-size: 20px;
+}
+#contenairticket{
+    grid-template-columns: repeat(2,1fr);
+}
+.tick{
+    max-width: 300px;
+}
+
+}
+
+@media screen and (min-width: 730px){
+#section-ticket h1{
+    font-size: 65px;
+}
+#section-ticket p{
+font-size: 25px;
+}
+#land-contenairticket{
+    flex-direction: row;
+    font-size: 25px;
+}
+#alleSpieleTicket{
+    flex-direction: row;
+}
+#alleSpieleTicket a{
+    font-size: 25px;
+}
+#contenairticket{
+    grid-template-columns: repeat(2,1fr);
+}
+.tick{
+    max-width: 100%;
+}
+.tick h4{
+    font-size: 25px;
+}
+}
