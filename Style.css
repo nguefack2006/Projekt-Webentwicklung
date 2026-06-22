@@ -18,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position:sticky
 }
 .logo img{
     width:35px;
@@ -72,21 +73,7 @@
 .navlink a:hover{
     color:rgb(30,144,255);
 }
-.search input{
-    padding:6px 10px;
-    border-radius: 6px;
-    border:none;
-    
-}
-.search button{
-    padding: 8px 12px;
-    border: none;
-    border-radius: 6px; 
-    cursor: pointer;
-    background-color: rgb(30,144,255);
-    color: white;
-    
-}
+
 #sectionhome{
     display: grid;
     grid-template-columns: 1fr;
@@ -387,7 +374,7 @@ footer h3{
 .social-medien a{
     color:white;
     margin:0 10px;
-    font-size: 24px;
+    
     transition: 0,3s;
 }
 .social-medien a:hover{
@@ -415,6 +402,7 @@ footer h3{
 
 /*News page*/
 #bodynews{
+    font-size: 1.3rem;
    background-color: rgb(30, 41, 59);
    margin: 0px;
    padding: 0px;
@@ -426,7 +414,7 @@ footer h3{
    #bodynews h1{
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
-    font-size: 45px;
+   
     margin: 5px;
     line-height: 1;
     color: white;
@@ -449,7 +437,7 @@ footer h3{
 }
 .contenairvonNews figure figcaption{
     font-weight: bold;
-    font-size: 15px;
+    
     color: white;
 }
 .contenairvonNews figure figcaption:hover{
@@ -468,6 +456,7 @@ footer h3{
 /*ticket page*/
 
 #bodyticket{
+    font-size: 1.3rem;
     display:  grid;
     grid-template-columns: 1fr;
     margin: 0px;
@@ -486,7 +475,7 @@ footer h3{
 font-family: "Roboto Condensed", sans-serif;
 text-transform: uppercase;
     font-weight: bold;
-    font-size: 45px;
+    
     margin: 20px;
     line-height: 1;
     color: white;
@@ -552,7 +541,7 @@ text-transform: uppercase;
     padding: 10px;
 }
 .tick h4{
-font-size: 15px;
+
 margin: 20px;
 }
 .tick a{
@@ -610,35 +599,24 @@ margin: 20px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 20px;
+        gap: 10px;
         margin-top: 0;
         margin-left: auto;
     }
      
     .navlink {
         display: flex;
-        gap: 18px;
+        gap: 10px;
     }
 
     .navlink li {
      margin-bottom: 0;
     }
-     .search {
-    margin-top: 0;
-    display:flex;
-    align-items:center;
-    flex-shrink: 0;
-    
-    }
+     
     .logo{
     margin-right:40px;
 }
-.search button{
-    padding:8px 10px;
-}
-.search input {
-    width: 120px;
-}
+
     #sectionhome{
         grid-area: section;
         padding-right: 100px;
@@ -658,22 +636,12 @@ margin: 20px;
     #ueberschrift{
         grid-area: ueberschrift;
     }
-    #ueberschrift h1{
-        font-size: 64px;
-    }
-    #ueberschrift p{
-        font-size: 20px;
-    }
+    
     #Gastgeberland{
         grid-area: Gastgeberland;
         max-width: 650px;
     }
-    #Gastgeberland h3{
-        font-size: 30px;
-    }
-    #Gastgeberland p{
-        font-size: 25px;
-    }
+    
     
     #right_home{
         grid-area: right_home;
@@ -684,9 +652,7 @@ margin: 20px;
     article{
          margin-right: 0px;
     }
-    article a{
-    font-size: 30px;
-}
+   
 article a:hover{
     font-size: 35px;
 }
@@ -736,58 +702,44 @@ aside img {
     .contenairvonNews{
     grid-template-columns: repeat(3,1fr);
 }
-#bodynews h1{
-    font-size: 65px;
-}
-.contenairvonNews figure figcaption:hover{
-    font-size: 30px;
-    
-}
+
 .contenairvonNews figure a:hover{
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 .contenairvonNews figure figcaption{
     font-weight: bold;
-    font-size: 25px;
+   
     color: white;
 }
 
 /*ticket page*/
-#section-ticket h1{
-    font-size: 65px;
-}
-#section-ticket p{
-font-size: 25px;
-}
+
 #land-contenairticket{
     flex-direction: row;
-    font-size: 25px;
+    
 }
 #alleSpieleTicket{
     flex-direction: row;
 }
-#alleSpieleTicket a{
-    font-size: 25px;
-}
+
 #contenairticket{
     grid-template-columns: repeat(2,1fr);
 }
 .tick{
     max-width: 100%;
 }
-.tick h4{
-    font-size: 25px;
-}
+
     
 }
 
 /*spielplan*/
 
 #bodyspielplan{
-    font-family: Arial, Helvetica, sans-serif;
+    
     padding:20px;
     margin:0;
     background-color: rgb(2,8,23);
+    font-size: 1.3rem;
 }
 table{
     width:100%;
@@ -838,10 +790,10 @@ tr:hover{
 #spielplane h2{
     color:white;
     margin-bottom:16px;
-    font-size: 32px;
+    
 }
 .vs{
-font-size: 17px;
+
 color:rgb(30,144,255);
 font-weight:bold;
 text-align: center;
@@ -864,7 +816,7 @@ width:50px;
     text-decoration: none;
     border:1px solid rgb(30,144,255);
     border-radius: 6px;
-    font-size: 13px;
+    
     padding:4px 10px;
 }
 .team{
@@ -886,10 +838,7 @@ td:nth-child(4){
     color:white;
     background-color: rgb(30,144,255);
 }
-#teamcontent p{
-    font-size: 20px;
-    
-}
+
 
 
 
@@ -903,9 +852,10 @@ td:nth-child(4){
 
 }
 .spiel-link a:hover{
-    font-size: 30px;
+    font-size: 1.5rem;
     
 }
+
 /*team backgraound*/
     #team{
         background-image:
@@ -926,7 +876,7 @@ td:nth-child(4){
     
     }
     #team .h1{
-        font-size: 35px;
+      
         font-weight: bold;
     }
     #team h1:hover{
@@ -935,7 +885,7 @@ background-color: rgb(30,144,255);
 
     .best a{
         text-decoration: none;
-        font-size: 20px;
+        
         color:rgb(30,144,255);
 
     }
@@ -945,7 +895,7 @@ background-color: rgb(30,144,255);
     }
     .title{
         color:white;
-        font-size: 30px;
+        
         font-weight: bold;
         text-align: center;
     }
@@ -975,8 +925,7 @@ background-color: rgb(30,144,255);
          display: block;
          margin: 0 auto 15px;
     
-         font-size: 20px;
-
+        
     }
    
 
@@ -1002,7 +951,7 @@ background-color: rgb(30,144,255);
     /*gruppe css*/
     .gruppen h2{
         color: white;
-        font-size: 30px;
+       
         font-weight: bold;
         margin-bottom: 30px;
     }
@@ -1100,7 +1049,7 @@ html{
 }
 .quiz p{
     color:rgb(204,204,204);
-    font-size: 16px;
+   
 }
 .quiz-sec{
     padding:20px;
@@ -1134,7 +1083,7 @@ html{
 .question{
     
     color: white;
-    font-size: 27px;
+   
     margin-bottom: 30px;
     text-shadow: 0 0 10px rgba(30,144,255,0.7);
 }
@@ -1152,7 +1101,7 @@ html{
     color:white;
     cursor:pointer,;
     transition: 0.3s;
-    font-size: 18px;
+    
 
 }
 .answer-btn:hover{
@@ -1183,11 +1132,10 @@ html{
 }
 .result h2{
     color: white;
-    font-size: 20px;
 }
 .result p{
     color:antiquewhite;
-    font-size: 20px;
+    
 }
 
 .quiz h1{
@@ -1196,6 +1144,7 @@ html{
 }
 
 #quizbody{
+    font-size: 1rem;
     background-color: rgb(7,26,53);
 }
 
@@ -1246,7 +1195,7 @@ html{
 
 
 /*media query */
-/*Desktop*/
+/*Desktop
 @media all and (min-width:1200px){
     .gruppe{
         grid-template-columns: repeat(4,1fr);
@@ -1282,9 +1231,10 @@ html{
     font-size: 1em;
 }
 
+*/
 
 
-/*quiz*/
+/*quiz
 .quiz p{
     font-size: 1.6em;
 }
@@ -1312,6 +1262,7 @@ html{
         font-size: 1.7em;
     }
 }
+    */
 /*Tablette*/
 
 @media all and (min-width:768px){
@@ -1356,11 +1307,15 @@ html{
         grid-template-columns: repeat(2,1fr);
 
      }
+     #bodyspielplan{
+        font-size: 1.7em;
+     }
 
      /*quiz*/
-     .quiz h1{
+     /*.quiz h1{
         font-size: 45px;
      }
+        */
      .quiz-sec{
         padding:45px;
         max-width: 800px;
@@ -1370,7 +1325,7 @@ html{
 }
 
 .footer-line{
-    width:300px;
+    width:80%;
     margin:20px auto;
     border:none;
     border: 2px dashed rgb(30,144,255)
@@ -1379,18 +1334,16 @@ html{
 
 .footertitle h3{
     color:gold;
-        font-size: 1.5em;
-    }
+}
 
     #host-country h3{
         color: rgb(0, 123, 255);
-        font-size: 1.5em;
+       
     }
     
     .blue-icon{
     color:rgb(0, 123, 255);;
-    font-size: 1.5em;
-}
+    }
 
     
 
@@ -1403,31 +1356,33 @@ html{
         align-items: center;
         flex-wrap: wrap;
         gap:30px;
-        font-size: 28px;
+        font-size: 2rem;
     }
 
    .footertitle h3{
     color:gold;
-        font-size: 2.5em;
+        font-size: 2.5rem;
 
     }
 
    footer p{
-    font-size: 1.5em;
+    font-size: 1.8rem;
    }
-    .social-medien a{
-        font-size: 28px;
-    }
-
+   .social-medien a{
+    font-size: 1.8rem;
+   }
+   .footer-link{
+    font-size: 2rem;
+   }
+    
 
     #host-country h3{
         color: rgb(0, 123, 255);
-        font-size: 1.6em;
     }
 
     .blue-icon{
     color:rgb(0, 123, 255);;
-    font-size: 1.5em;
+    
 }
 
 
@@ -1458,8 +1413,8 @@ html{
 
 .ball {
     position: fixed;
-    font-size: 35px;
-    z-index: 9999;
+    font-size: 1.7rem;
+    z-index: 999;
     pointer-events: none;
     animation: fall linear forwards;
 }
