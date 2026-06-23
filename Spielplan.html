@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <link rel="icon" href="favicon.ico">
+     <link rel="icon" href="image/favicon.ico">
 
     <title> Spielplan| FIFA World Cup 2026 , Termine und Stadien </title>
     
@@ -13,15 +13,15 @@
     <meta name="keywords" content="Spielplan, Termine, Gruppen, Stadien, Spiele">
 
 
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="css-ordner/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
 </head>
 <body id="bodyspielplan">
-    <header id="head">
+    
         <nav class="navbar">
             <a href="index.html" class="logo">
-                <img src="trophy.png" alt="World Cup Trophy">
+              <img src="image/trophy.png" alt="Dieses Bild zeigt den Pokal der FIFA Fußball-Weltmeisterschaft">
                 FIFA<span>2026</span>
             </a>
             <input type="checkbox" id="togglemenu">
@@ -45,9 +45,9 @@
         </div>
 
         </nav>
-    </header>
 
-    <main>
+
+    
         <section id="team">
 
             <div id="teamcontent">
@@ -142,6 +142,20 @@
  
     <section id="spielplane">
         <h2> 📅SPIELPLAN</h2>
+
+        <div class="weather">
+    <h3>🌤️  Aktuelles Wetter in Mexiko Stadt</h3>
+
+    <div class="weather-info">
+        <span>🌡️ <span id="temperature">Laden...</span></span>
+
+        <span>|</span>
+
+        <span>💨 <span id="wind">Laden...</span></span>
+    </div>
+</div>
+
+        
         <div class="tablecontener">
         <table>
             
@@ -762,13 +776,13 @@
         </div>
     </section>
 
-    </main>
+    
 
 
 
     <footer> 
     <div class="footertitle">
-        <h3 >🏆FIFA World Cup 2026</h3>
+        <h2 >🏆FIFA World Cup 2026</h2>
     </div>
 
     <p>
@@ -776,11 +790,11 @@
     </p>
 
    <div class="footer-link">
-        <a href="Index.html"> <i class="fa-solid fa-house blue-icon"></i> Home</a> 
-         <a href="Spielplan.html"> <i class="fa-solid fa-calendar-days blue-icon"></i> Spielplan</a> 
-         <a href="Quiz.html"> <i class="fa-solid fa-circle-question blue-icon"></i> Quiz</a> 
-         <a href="News.html"><i class="fa-solid fa-newspaper blue-icon"></i> News</a> 
-         <a href="Ticket.html"> <i class="fa-solid fa-ticket blue-icon"></i> Ticket</a>
+        <a href="index.html"> <i class="fa-solid fa-house blue-icon"></i> Home</a> 
+         <a href="spielplan.html"> <i class="fa-solid fa-calendar-days blue-icon"></i> Spielplan</a> 
+         <a href="quiz.html"> <i class="fa-solid fa-circle-question blue-icon"></i> Quiz</a> 
+         <a href="news.html"><i class="fa-solid fa-newspaper blue-icon"></i> News</a> 
+         <a href="ticket.html"> <i class="fa-solid fa-ticket blue-icon"></i> Ticket</a>
     </div>
 
     <hr class="footer-line">
@@ -835,8 +849,7 @@
 
  </footer>
 
+ <script src="script-ordner/weather.js"></script>
 </body>
-
-
 
 </html>
